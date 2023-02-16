@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+.title {
+  font-size: 52px;
+  text-align: center;
+  margin-top: 20px;
+}
+.book {
+  color: #16c60c;
+}

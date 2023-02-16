@@ -1,6 +1,6 @@
 import React from "react";
+import "./BookTable.css";
 import { Component } from "react";
-import "./BookTable";
 
 class BookTable extends Component {
   constructor() {
@@ -11,11 +11,10 @@ class BookTable extends Component {
     return (
       <tr>
         <td>{this.props.title}</td>
-        <td>{this.props.author}</td>
+        <td>{this.props.writer}</td>
         <td>{this.props.year}</td>
       </tr>
     );
   }
 }
-
 export default BookTable;

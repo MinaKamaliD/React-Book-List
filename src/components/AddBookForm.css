@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+form {
+  /* width: 500px; */
+  font-size: 20px;
+  color: #868e96;
+}
+
+label {
+  display: block;
+}
+input {
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+.btn {
+  width: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 20px;
+}

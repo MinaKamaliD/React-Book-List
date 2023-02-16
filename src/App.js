@@ -1,10 +1,14 @@
 import React from "react";
-import AddBook from "./components/AddBook";
+import AddBookForm from "./components/AddBookForm";
+import Title from "./Title";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
     <div>
-      <AddBook />
+      <Title />
+      <AddBookForm />
+      <Footer />
     </div>
   );
 };
