@@ -4,6 +4,15 @@
   padding: 0;
 }
 
-table {
-  border: 1px solid grey;
+/* tr {
+  height: 20px;
+} */
+.addedBook {
+  height: 30px;
+  text-align: center;
+  /* background-color: rgb(227, 255, 227); */
+}
+td {
+  border: 1px solid rgb(194, 176, 176);
+  border-radius: 5px;
 }

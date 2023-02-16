@@ -9,7 +9,7 @@ class BookTable extends Component {
 
   render() {
     return (
-      <tr>
+      <tr className="addedBook">
         <td>{this.props.title}</td>
         <td>{this.props.writer}</td>
         <td>{this.props.year}</td>

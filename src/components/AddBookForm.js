@@ -44,41 +44,49 @@ class AddBookForm extends Component {
     return (
       <div className="container">
         <form onSubmit={this.submitHandler}>
-          <label htmlFor="">Title</label>
-          <input
-            type="text"
-            value={this.state.title}
-            onChange={this.titleHandler}
-          />
-          <label htmlFor="">Writer</label>
-          <input
-            type="text"
-            value={this.state.writer}
-            onChange={this.writerHandler}
-          />
-          <label htmlFor="">Year</label>
-          <input
-            type="number"
-            value={this.state.year}
-            onChange={this.yearHandler}
-          />
+          <div>
+            <label htmlFor="">Title</label>
+            <input
+              type="text"
+              value={this.state.title}
+              onChange={this.titleHandler}
+            />
+          </div>
+          <div>
+            <label htmlFor="">Writer</label>
+            <input
+              type="text"
+              value={this.state.writer}
+              onChange={this.writerHandler}
+            />
+          </div>
+          <div>
+            <label htmlFor="">Year</label>
+            <input
+              type="number"
+              value={this.state.year}
+              onChange={this.yearHandler}
+            />
+          </div>
           <button className="btn">Add Book</button>
         </form>
-        <table>
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Writer</th>
-              <th>Year</th>
-            </tr>
-          </thead>
+        <div>
+          <table>
+            <thead className="thead">
+              <tr>
+                <th>Title</th>
+                <th>Writer</th>
+                <th>Year</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            {this.state.books.map((book) => (
-              <BookTable {...book} key={book.id} />
-            ))}
-          </tbody>
-        </table>
+            <tbody>
+              {this.state.books.map((book) => (
+                <BookTable className="addedBook" {...book} key={book.id} />
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }

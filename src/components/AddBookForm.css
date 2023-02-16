@@ -4,14 +4,35 @@
   padding: 0;
 }
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  display: flex;
+
+  justify-content: center;
+  column-gap: 100px;
 }
 
 form {
-  /* width: 500px; */
   font-size: 20px;
-  color: #868e96;
+  color: #464646;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  width: 500px;
+}
+table {
+  width: 500px;
+  margin-top: 12px;
+}
+.thead {
+  width: 501px;
+  background-color: #16c60c;
+
+  height: 30px;
+}
+th {
+  width: 167px;
+  border-radius: 5px;
 }
 
 label {
@@ -21,6 +42,11 @@ input {
   display: block;
   width: 100%;
   height: 30px;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
 }
 .btn {
   width: 100%;
@@ -28,4 +54,11 @@ input {
   cursor: pointer;
   padding: 5px;
   margin-top: 20px;
+  background-color: #16c60c;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #089b00;
+  transition: all linear 0.1s;
 }
